@@ -1,5 +1,28 @@
 .homecando{
     background-color: var(--ifm-color-primary);
     color: var(--ifm-color-white);
-    padding-top: 1rem;
+    flex-direction: column;
+    padding: 6rem 0 6rem 0;
+}
+.canDiiItem{
+    color: var(--ifm-color-block-shadow);
+    background-color: var(--ifm-color-white);
+    width: 194px;
+    height: 66px;
+    border-radius: 9999px;
+    border-right: 2px solid  var(--ifm-color-block-shadow);
+    border-bottom: 5px solid  var(--ifm-color-block-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 1rem;
+}
+.canDiiItem:hover{
+    background-color: #f1f1f1;
+}
+main h1{
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
 }

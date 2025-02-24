@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Validgen',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Gerador de dados para testes',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

@@ -46,6 +46,7 @@
 }
 .button--primary{
   color: var(--ifm-color-white);
+  padding: 1rem;
 }
 .button--primary:hover{
   color: var(--ifm-color-white);
@@ -53,6 +54,7 @@
 .button--secondary{
   background-color: var(--ifm-color-secondary);
   color: var(--ifm-color-block-shadow);
+  padding: 1rem;
 }
 .button--secondary:hover{
   background-color: var(--ifm-color-secondary-darker);
@@ -64,4 +66,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.zoom{
+  transition: all 0.3s ease-in-out;
+}
+.zoom:hover{
+  transform: scale(1.05);
 }
