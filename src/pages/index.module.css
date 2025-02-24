@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   background-color: var(--ifm-color-main);
-  color: var(--ifm-color-block-shadow);
+  color: var(--ifm-color-main-fg);
 }
 
 @media screen and (max-width: 996px) {

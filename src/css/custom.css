@@ -17,19 +17,25 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-color-secondary: #B4DEF0;
   --ifm-color-main: #fff;
+  --ifm-color-main-fg: #000;
   --ifm-color-block-shadow: #0E0E0E;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #8057D9;
+  --ifm-color-primary-dark: #6646aa;
+  --ifm-color-primary-darker: #47307a;
+  --ifm-color-primary-darkest: #332257;
+  --ifm-color-primary-light: #8d68dc;
+  --ifm-color-primary-lighter: #986cf8;
+  --ifm-color-primary-lightest: #b592ff;
+  --ifm-color-secondary: #B4DEF0;
+  --ifm-color-secondary-darker: #8bbdd3;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-main: ##1b1b1d;
+  --ifm-color-main-fg: #fff;
+  --ifm-color-block-shadow: #0E0E0E;
 }
 .navbar{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -38,8 +44,18 @@
   display: flex;
   justify-content: space-evenly;
 }
+.button--primary{
+  color: var(--ifm-color-white);
+}
+.button--primary:hover{
+  color: var(--ifm-color-white);
+}
 .button--secondary{
   background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-block-shadow);
+}
+.button--secondary:hover{
+  background-color: var(--ifm-color-secondary-darker);
 }
 .mini--container{
   width: 50%;
