@@ -1,0 +1,5 @@
+.homecando{
+    background-color: var(--ifm-color-primary);
+    color: var(--ifm-color-white);
+    padding-top: 1rem;
+}
