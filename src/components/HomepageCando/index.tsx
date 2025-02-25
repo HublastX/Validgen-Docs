@@ -8,13 +8,11 @@ type CanDoItem = {
 };
 
 const canDoList: CanDoItem[] = [
-    { title: "Feature One", link: "/" },
-    { title: "Feature Two", link: "/" },
-    { title: "Feature Three", link: "/" },
-    { title: "Feature Four", link: "/" },
-    { title: "Feature Five", link: "/" },
-    { title: "Feature Six", link: "/" },
-    { title: "Feature Seven", link: "/" },
+    { title: "Validate CPF", link: "docs/CPF/ValidateCPF" },
+    { title: "Format CPF", link: "/docs/CPF/FormatCPF" },
+    { title: "Generate CPF", link: "/docs/CPF/GenerateCPF" },
+    { title: "Unformat CPF", link: "/docs/CPF/UnformatCPF" },
+    { title: "Format Generated CPF", link: "/docs/CPF/FormatGeneratedCPF" },
 ];
 
 function CanDoItem({ title, link }: CanDoItem) {
@@ -28,14 +26,14 @@ function CanDoItem({ title, link }: CanDoItem) {
 export default function Homecando(): ReactNode {
     return (
         <div className={clsx(style.homecando, "container--flex")}>
-            <h1>Conheça mais!</h1>
+            <h1>Explore more!</h1>
             <div className="container-flex row ju" style={{width: "70%", justifyContent: "center"}}>
                 {canDoList.map((item, index) => (
                     <CanDoItem key={index} {...item} />
                 ))}
             </div>
-            <h2>Venha conhecer mais sobre cada um deles</h2>
-            <p>clicando nos itens voce pode testalos ou sla oq mais</p>
+            <h2>Come and learn more about each of them</h2>
+            <p>By clicking on the items, you will discover how to use them.</p>
         </div>
     );
 }

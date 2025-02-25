@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import HomepageCando from "@site/src/components/HomepageCando";
 import Heading from "@theme/Heading";
 
@@ -20,7 +19,10 @@ function HomepageHeader() {
                 <img src="img/svg.svg" alt="logoTeste" />
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className="container--flex">
-                    <div className="mini--container row justify--space-evenly">
+                    <pre>
+                        <code>go get github.com/Hublastt/ValidGen</code>
+                    </pre>
+                    {/* <div className="mini--container row justify--space-evenly">
                         <div className={styles.buttons}>
                             <Link
                                 className="button button--primary button--lg"
@@ -37,7 +39,7 @@ function HomepageHeader() {
                                 botao secundario
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </header>
@@ -54,7 +56,6 @@ export default function Home(): ReactNode {
             <HomepageHeader />
             <main>
                 <HomepageCando />
-                <HomepageFeatures />
             </main>
         </Layout>
     );
