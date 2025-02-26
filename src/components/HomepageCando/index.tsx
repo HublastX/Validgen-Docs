@@ -27,7 +27,7 @@ export default function Homecando(): ReactNode {
     return (
         <div className={clsx(style.homecando, "container--flex")}>
             <h1>Explore more!</h1>
-            <div className="container-flex row ju" style={{width: "70%", justifyContent: "center"}}>
+            <div className="container-flex row" style={{width: "70%", justifyContent: "center", margin: "2rem 0 4rem 0"}}>
                 {canDoList.map((item, index) => (
                     <CanDoItem key={index} {...item} />
                 ))}
